@@ -1,0 +1,9 @@
+<div class="post{% if index is odd %} odd{% endif %}">
+    <div class="page-header">
+        {{ post.title }}
+    </div>
+    <div>
+        {{ post.content }}
+    </div>
+    <div class="rating">Rating: {{ post.rating|number_format(2, '.', ' ') }}</div>
+</div>

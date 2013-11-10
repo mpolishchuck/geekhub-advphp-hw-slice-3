@@ -7,6 +7,9 @@
             <h1>GeekHub homework #5</h1>
             <p>This is GeekHub homework #5.</p>
         </div>
+        {% for index, post in posts %}
+            {{ include('PaulMaxwellHomeworkBundle:Default:_post.html.twig', {'post' : post, 'index' : index}) }}
+        {% endfor %}
         <div class="author-info">
             {{ render(controller('PaulMaxwellHomeworkBundle:Default:partialAuthorInfo')) }}
         </div>
