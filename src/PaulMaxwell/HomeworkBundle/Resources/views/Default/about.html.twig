@@ -1,1 +1,18 @@
 {% extends "PaulMaxwellHomeworkBundle::layout.html.twig" %}
+
+{% block body %}
+    {{ parent() }}
+    <div class="container">
+        <div class="page-header">This is GeekHub Advanced PHP Homework #5. Targets:</div>
+        <ul>
+            <li>Create base template of your application</li>
+            <li>Use assetic to add css and js to your templates</li>
+            <li>Create index, about, contact actions</li>
+            <li>Create simple model(s), like post | dream | product</li>
+            <li>Generate demo data at controller</li>
+            <li>View (render) demo data at your template</li>
+            <li>Use filters and variant functions at your templates</li>
+        </ul>
+        {{ include('PaulMaxwellHomeworkBundle:Default:_return_to_main.html.twig') }}
+    </div>
+{% endblock %}
