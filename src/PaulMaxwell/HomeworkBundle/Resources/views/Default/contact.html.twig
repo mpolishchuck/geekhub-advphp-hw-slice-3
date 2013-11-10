@@ -1,0 +1,10 @@
+{% extends "PaulMaxwellHomeworkBundle::layout.html.twig" %}
+
+{% block body %}
+    {{ parent() }}
+    <div class="container">
+        <div class="page-header">Information about the author</div>
+        {{ render(controller('PaulMaxwellHomeworkBundle:Default:partialAuthorInfo', {'showLabel' : true})) }}
+        {{ include('PaulMaxwellHomeworkBundle:Default:_return_to_main.html.twig') }}
+    </div>
+{% endblock %}
