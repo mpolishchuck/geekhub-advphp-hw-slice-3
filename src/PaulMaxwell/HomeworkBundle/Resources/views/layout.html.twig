@@ -30,6 +30,8 @@
 
 {% block navmenu %}
     <ul class="nav navbar-nav">
-        <li class="active"><a href="{{ url('paul_maxwell_homework_homepage') }}">Index</a></li>
+        <li{% if app.request.attributes.get('_route') == 'paul_maxwell_homework_homepage' %} class="active"{% endif %}><a href="{{ url('paul_maxwell_homework_homepage') }}">Index</a></li>
+        <li{% if app.request.attributes.get('_route') == 'paul_maxwell_homework_about' %} class="active"{% endif %}><a href="{{ url('paul_maxwell_homework_about') }}">About</a></li>
+        <li{% if app.request.attributes.get('_route') == 'paul_maxwell_homework_contact' %} class="active"{% endif %}><a href="{{ url('paul_maxwell_homework_contact') }}">Contact</a></li>
     </ul>
 {% endblock %}
