@@ -13,6 +13,9 @@
             <li>View (render) demo data at your template</li>
             <li>Use filters and variant functions at your templates</li>
         </ul>
+        <div class="author-info">
+            {{ render(controller('PaulMaxwellHomeworkBundle:Default:partialAuthorInfo')) }}
+        </div>
         {{ include('PaulMaxwellHomeworkBundle:Default:_return_to_main.html.twig') }}
     </div>
 {% endblock %}
