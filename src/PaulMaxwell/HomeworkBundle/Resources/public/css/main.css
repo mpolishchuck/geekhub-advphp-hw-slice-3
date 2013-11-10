@@ -5,3 +5,8 @@ body {
 .page-footer {
     text-align: center;
 }
+
+.author-info {
+    font-size: 80%;
+    text-align: right;
+}
